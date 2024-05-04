@@ -18,8 +18,8 @@ CREATE TABLE employees(
 	last_name VARCHAR NOT NULL,
 	sex VARCHAR NOT NULL,
 	hire_date VARCHAR NOT NULL,
-	PRIMARY KEY (emp_no)
-	FOREIGN KEY (emp_title_id) REFERENCES titles (title_id),
+	PRIMARY KEY (emp_no),
+	FOREIGN KEY (emp_title_id) REFERENCES titles (title_id)
 );
 
 CREATE TABLE dept_manager(
