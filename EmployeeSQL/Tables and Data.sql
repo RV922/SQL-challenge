@@ -26,16 +26,16 @@ CREATE TABLE dept_manager(
 	dept_no VARCHAR NOT NULL,
 	emp_no INT NOT NULL,
 	PRIMARY KEY (dept_no, emp_no),
-	Foreign key (EMP_no) REFERENCES employees (emp_no),
-	Foreign key (dept_no) REFERENCES departments (dept_no)
+	FOREIGN KEY (EMP_no) REFERENCES employees (emp_no),
+	FOREIGN KEY (dept_no) REFERENCES departments (dept_no)
 );
 
 CREATE TABLE dept_emp(
 	emp_no INT NOT NULL,
 	dept_no VARCHAR NOT NULL,
 	PRIMARY KEY (emp_no, dept_no),
-	Foreign key (emp_no) REFERENCES employees (emp_no),
-	Foreign key (dept_no) REFERENCES departments (dept_no)
+	FOREIGN KEY (emp_no) REFERENCES employees (emp_no),
+	FOREIGN KEY (dept_no) REFERENCES departments (dept_no)
 );
 
 CREATE TABLE salaries(
