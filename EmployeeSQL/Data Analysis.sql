@@ -46,7 +46,7 @@ SELECT emp.last_name,
 		emp.sex
 FROM employees AS emp
 WHERE first_name = 'Hercules' 
-AND last_name LIKE 'B%'
+AND last_name LIKE 'B%';
 
 --This Query fetches the data for the sixth task:
 SELECT emp.emp_no,	
@@ -57,7 +57,7 @@ INNER JOIN dept_manager AS dm
 ON emp.emp_no = dm.emp_no
 INNER JOIN departments AS d
 ON dm.dept_no = d.dept_no
-WHERE dept_name = 'Sales'
+WHERE dept_name = 'Sales';
 
 --This Query fetches the data for the seventh task:
 SELECT emp.emp_no,	
