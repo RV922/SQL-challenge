@@ -70,7 +70,7 @@ ON emp.emp_no = dm.emp_no
 INNER JOIN departments AS d
 ON dm.dept_no = d.dept_no
 WHERE dept_name = 'Sales' 
-OR dept_name = 'Research';
+OR dept_name = 'Development';
 
 --This Query fetches the data for the eighth task:
 SELECT emp.last_name,
